@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function biggestNumber_2(a,b){
+        //     if (a>b){
+        //         console.log(a)
+        //     }
+        //     else{
+        //         console.log(b)
+        //     }
+        // }
+
+        function biggestNumber_2(a,b){
+            if (a>b){
+                return a
+            }
+            else{
+                return b
+            }
+        }
+
+        function biggestNumber_3(a,b,c){
+            m= biggestNumber_2(a,b)
+            n= biggestNumber_2(c,m)
+            return n
+        }
+
+        function biggestNumber_4(a,b,c,d){
+            p = biggestNumber_3(a,b,c)
+            o = biggestNumber_2(p,d)
+            return o
+        }
+
+        let x=90
+        let y=78
+        let z=5437
+        let t=5
+        console.log(biggestNumber_2(x,y))
+        console.log(biggestNumber_3(x,y,z))
+        console.log(biggestNumber_4(x,y,z,t))
+
+
+    </script>
+</body>
+</html>
