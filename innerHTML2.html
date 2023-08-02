@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="delInnerDiv()">clean</button>
+    <button onclick="add3images()">addimages</button>
+    
+    <div id ='d1'>
+        Yaacov
+    </div>
+    <script>
+        function delInnerDiv(){
+            d1.innerHTML = ''
+        }
+        function add3images(){
+            d1.innerHTML += '<img src="images.jpg" alt="image1"><img src="image2.jpg" alt="image2"><img src="image3.jpg" alt="image3">'
+        }
+    </script>
+</body>
+</html>
